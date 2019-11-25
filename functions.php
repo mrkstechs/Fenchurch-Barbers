@@ -122,6 +122,12 @@ add_action( 'widgets_init', 'fenchurch_barbers_widgets_init' );
 function fenchurch_barbers_scripts() {
 	wp_enqueue_style( 'fenchurch-barbers-style', get_stylesheet_uri() );
 
+	//wp_enqueue_style( 'theme_style', get_template_directory_uri() . '/public/css/app.css');
+
+	//wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/public/js/app.js' , array(), '25112019', true );
+
+	wp_enqueue_script( 'theme_js', 'http://localhost:8080/app.js' , array(), '25112019', true );
+
 	wp_enqueue_script( 'fenchurch-barbers-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'fenchurch-barbers-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
