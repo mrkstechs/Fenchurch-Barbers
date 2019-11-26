@@ -25,15 +25,27 @@ module.exports = env => {
             }
           },
           {
+            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: '../fonts/'
+                }
+              }
+            ]
+          },
+          {
             test: /\.(svg|png|jpg|gif)$/,
             use: {
               loader: "file-loader",
               options: {
                 name: "[name].[ext]",
-                outputPath: path.resolve(__dirname, 'public/imgs/')
+                outputPath: '../imgs/'
               }
             }
-          }
+          },
         ]
       }
     },

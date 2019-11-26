@@ -1,1 +1,6 @@
-html{height:100%;padding:0;margin:0}html body{border:1px solid red}
+html{height:100%;padding:0;margin:0}html body{border:1px solid #9acd32}
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */@font-face{font-family:FontAwesome;src:url(/wp-content/themes/fenchurch-barbers/public/fonts/fontawesome-webfont.eot);src:url(/wp-content/themes/fenchurch-barbers/public/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"),url(/wp-content/themes/fenchurch-barbers/public/fonts/fontawesome-webfont.woff2) format("woff2"),url(/wp-content/themes/fenchurch-barbers/public/fonts/fontawesome-webfont.woff) format("woff"),url(/wp-content/themes/fenchurch-barbers/public/fonts/fontawesome-webfont.ttf) format("truetype"),url(/wp-content/themes/fenchurch-barbers/public/fonts/fontawesome-webfont.svg#fontawesomeregular) format("svg");font-weight:400;font-style:normal}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
