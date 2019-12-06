@@ -7,7 +7,17 @@ html{
     padding: 0;
     margin: 0;
     body{
-        border: solid 1px yellowgreen;
+        height: 100%;
+        padding: 0;
+        margin: 0 !important;
         font-family: $reg;
+        #page{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .page{
+            margin: 0;
+        }
     } 
 }

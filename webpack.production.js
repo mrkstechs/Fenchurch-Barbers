@@ -22,14 +22,8 @@ module.exports = () => ({
     ]
   },
   plugins: [
-    new PurgecssPlugin({
-      paths: glob.sync([
-        path.join(__dirname, '*.php')
-      ]),
-    }),
     new MiniCssExtractPlugin({
       filename: '../css/[name].css'
     }),
-    new OptimizeCssAssetsPlugin({})
   ]
 });

@@ -37,14 +37,22 @@ module.exports = env => {
             ]
           },
           {
-            test: /\.(svg|png|jpg|gif)$/,
-            use: {
-              loader: "file-loader",
-              options: {
-                name: "[name].[ext]",
-                outputPath: '../imgs/'
+            test: /\.(svg|png|jp(e)g|gif)$/,
+            use: [
+              {
+                loader: "file-loader",
+                options: {
+                  name: "[name].[ext]",
+                  outputPath: '../imgs/'
+                }
+              },
+              {
+                loader: "image-webpack-loader",
+                options: {
+                  bypassOnDebug: true
+                }
               }
-            }
+            ]
           },
         ]
       }

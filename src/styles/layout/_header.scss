@@ -1,0 +1,43 @@
+#masthead{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 2;
+    h1{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+        font-size: 1.65em;
+        font-family: $bold;
+        margin: 0 auto;
+        padding: 1em .3em;
+        background-color: $grey;
+        color: $dark_grey;
+        text-transform: uppercase;
+        box-shadow: 0px 1px 3px darken($dark_grey, 15%);
+        span.sub-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: .7em;
+            font-size: .5em;
+            img{
+                display: inline-block;
+                width: 10%;
+            }
+        }
+    }
+    nav{
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: darken($grey, 15%);
+        div{
+            text-align: center;
+            text-transform: uppercase;
+            padding: .3em 0;
+            border-left: solid 1px darken($grey, 25%);
+        }
+    }
+}
